@@ -57,7 +57,7 @@ brew install sumo
 
 **（1）设置环境变量**
 
-环境变量，粗浅的理解，即能够用一个字符串代表一个路径并快速调用。这一步比较关键，需要对命令行操作有一些基本的知识。
+环境变量（Environment Variable），粗浅的理解，即能够用一个字符串代表一个路径并快速调用。这一步比较关键，需要对命令行操作有一些基本的知识。
 
 > SUMO Documentation: 
 >
@@ -67,7 +67,7 @@ brew install sumo
 > touch ~/.bashrc; open ~/.bashrc
 > ```
 
-首先，mac的command line有两种格式：`bash`和`zsh`。你需要知道的就是目前自己属于哪一种，在命令行中输入`XXX`即可知道你的电脑使用的是哪一种。另外，输入`chsh -s /bin/zsh`可以进行command line版本切换，这一切要在一开始完成。
+首先，mac的`shell`有两种格式：`bash`和`zsh`。你需要知道的就是目前自己属于哪一种（使用M1芯片的Mac应该都是默认初始为`zsh`），在命令行中输入`echo $SHELL`即可知道你的电脑使用的是哪一种`shell`。另外，输入`chsh -s /bin/zsh`可以进行`shell`版本切换，这一切要在一开始完成。
 
 接下来，注意第一个命令`touch ~/.bashrc`会生成一个新的`.bashrc`文件，若你之前有存储过环境变量，这个命令会导致这部分路径丢失。因此，建议先使用第二个命令`open ~/.bashrc`打开看看，不行再两步都执行。
 
